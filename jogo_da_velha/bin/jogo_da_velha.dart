@@ -1,5 +1,15 @@
-import 'package:jogo_da_velha/jogo_da_velha.dart' as jogo_da_velha;
-
+import '../lib/menu.dart';
+import 'dart:io';
 void main(List<String> arguments) {
-  print('Hello world: ${jogo_da_velha.calculate()}!');
+  bool start = false;
+  print("Você quer começar o jogo? y/n >> ");
+  String? resposta = stdin.readLineSync();
+  if (resposta!.contains('y')){
+    start = true;
+  }else{
+    bye();
+  }
+  while (start){
+    viewMenu();
+  }
 }
