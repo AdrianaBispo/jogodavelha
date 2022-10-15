@@ -1,4 +1,4 @@
-import '../lib/menu.dart';
+import 'package:jogo_da_velha/menu.dart';
 import 'dart:io';
 void main(List<String> arguments) {
   bool start = false;
