@@ -40,3 +40,11 @@ void parabens({required String nomeplayer}){
 =====================================
     ''');
 }
+
+void todosPerderam(){
+    print('''
+=====================================
+  INFELIZMENTO DOS PERDERAM O JOGO   
+=====================================
+    ''');
+}
