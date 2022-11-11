@@ -1,8 +1,8 @@
 void viewMenu() {
   print('''
-================================
-    BEM VINDO AO JOGO DA VELHA  
-================================  
+==================================
+    BEM VINDO AO JOGO DA VELHA    
+==================================
     ''');
 
 print('Essas são as posições que você pode jogar:');
@@ -17,11 +17,18 @@ print('Essas são as posições que você pode jogar:');
           |        |
 2         |        |
           |        |
-
-  -----------------------
 ''');
 }
 
 // Turno do Jogador X
 // Posição da Linha: 
 //Posição da Coluna: 
+
+
+void bye (){
+  print('''
+=====================================
+    VOLTE SEMPRE AO JOGO DA VELHA    
+=====================================
+    ''');
+}
