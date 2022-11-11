@@ -32,3 +32,11 @@ void bye (){
 =====================================
     ''');
 }
+
+void parabens({required String nomeplayer}){
+    print('''
+=====================================
+    PARABÉNS, O PLAYER $nomeplayer GANHOU    
+=====================================
+    ''');
+}
