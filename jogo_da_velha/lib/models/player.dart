@@ -1,33 +1,27 @@
 import '../utils/validator.dart';
-import '../lista_valores.dart';
 
 class Player {
-  Validator validator = Validator();
-  late String _player;
+  Validator _validator = Validator();
+  late String _playerName;
   bool _ganhador = false;
   List<String> _valores = <String>[];
 
   Player();
 
-  set player(String valor) {
-    _player = valor;
+  set playerName(String valor) {
+    _playerName = valor;
   }
 
+  String get playerName => _playerName;
+
   set valores(String chave) {
-    if (jogadas[chave]!.isEmpty) {
-      jogadas[chave] = _player;
-    } else if (jogadas.isNotEmpty) {
-      print('A posição, a $chave já foi escolhida.');
-    } else if (jogadas.containsKey(chave)) {
-      print('Essa possição não existe');
-    } else {
-      jogadas.update(chave, (value) => '');
+    if (_validator.jogadaValida(chave: chave)) {
       _valores.add(chave);
     }
   } //set valores
 
   set ganhador(bool valor) {
-    _ganhador = validator.ganhar(_valores);
+    _ganhador = _validator.ganhar(_valores);
   } //ganhador
 
   bool get ganhador {
