@@ -14,8 +14,8 @@ class Player {
 
   String get playerName => _playerName;
 
-  set valores(String chave) {
-    if (_validator.jogadaValida(chave: chave)) {
+  valores({required String chave, required Map<String, String> listaValores}) {
+    if (_validator.jogadaValida(chave: chave, listaValores: listaValores)) {
       _valores.add(chave);
     }
   } //set valores
