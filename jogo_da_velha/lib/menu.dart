@@ -25,13 +25,13 @@ void quadradoDaVelha({required Map<String, String> listajogadas}){
     print('''
       A        B         C
           |        |
-0     ${j['a0']}   |    ${j['b0']}   |    ${j['c0']}    
+0      ${j['a0']}   |     ${j['b0']}   |    ${j['c0']}    
   ________|________|________
           |        |
-1     ${j['a1']}   |    ${j['b1']}   |    ${j['c1']} 
+1      ${j['a1']}   |     ${j['b1']}   |    ${j['c1']} 
   ________|________|________
           |        |
-2     ${j['a2']}   |    ${j['b2']}   |    ${j['c2']} 
+2      ${j['a2']}   |     ${j['b2']}   |    ${j['c2']} 
           |        |
 ''');
 
@@ -55,8 +55,8 @@ void parabens({required String nomeplayer}){
 
 void todosPerderam(){
     print('''
-=====================================
-  INFELIZMENTO DOS PERDERAM O JOGO   
-=====================================
+======================================
+  INFELIZMENTO TODOS PERDERAM O JOGO   
+======================================
     ''');
 }
