@@ -1,4 +1,3 @@
-import 'lista_valores.dart';
 
 class Validator {
   bool ganhar(List<String> valores) {
@@ -28,15 +27,13 @@ class Validator {
     return ganhador;
   }
 
-  bool jogadaValida({required String chave}) {
-    if (jogadas[chave]!.isEmpty) {
-      jogadas.update(chave, (value) => '');
+  bool jogadaValida({required String chave, required Map<String, String> listaValores}) {
+    if (listaValores[chave]!.isEmpty) {
+      listaValores.update(chave, (value) => '');
       return true;
-    } else if (jogadas[chave]!.isNotEmpty) {
-      print('A posição, a $chave já foi escolhida.');
+    } else if (listaValores[chave]!.isNotEmpty) {
       return false;
-    } else if (!jogadas.containsKey(chave)) {
-      print('Essa possição não existe');
+    } else if (!listaValores.containsKey(chave)) {
       return false;
     }
     return false;
