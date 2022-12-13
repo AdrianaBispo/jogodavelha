@@ -29,7 +29,7 @@
 - [X] O usuario consegue ver tabela das jogadas;
 - [X] O usuario consegue saber qual foi o resultado do jogo;
 
-<h2 id='run'> 🚀 Como executar o projeto
+<h2 id='run'> 🚀 Como executar o projeto</h2>
 
 **Passo 1**
 Baixe ou clone este repositório usando o link abaixo:
